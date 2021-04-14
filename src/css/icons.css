@@ -1,0 +1,16 @@
+#icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+#icons .icon {
+  width: 150px;
+  text-align: center;
+}
+
+#icons .icon .service-icon {
+  color: #ADD981;
+  font-size: 40px;
+}
+/*# sourceMappingURL=icons.css.map */

@@ -1,0 +1,80 @@
+#best-sell .cards {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#best-sell .cards .card {
+  border-radius: 20px;
+  background-size: contain;
+  height: 350px;
+  width: 234px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: box-shadow 0.4s;
+}
+
+#best-sell .cards .card:hover {
+  box-shadow: 0 0 10px #868686a6;
+}
+
+#best-sell .cards .card:nth-child(1) {
+  background-image: url("../images/nos_meilleures_ventes/1.jpg");
+}
+
+#best-sell .cards .card:nth-child(2) {
+  background-image: url("../images/nos_meilleures_ventes/2.jpg");
+}
+
+#best-sell .cards .card:nth-child(3) {
+  background-image: url("../images/nos_meilleures_ventes/3.jpg");
+}
+
+#best-sell .cards .card:nth-child(4) {
+  background-image: url("../images/nos_meilleures_ventes/4.jpg");
+}
+
+#best-sell .cards .card .infos {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 45px;
+  width: 100%;
+  background-color: #ffffffdf;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#best-sell .cards .card .infos .name-prix {
+  padding-left: 10px;
+  position: relative;
+}
+
+#best-sell .cards .card .infos .name-prix p.prix {
+  font-size: 14px;
+  color: #ADD981;
+}
+
+#best-sell .cards .card .infos .bouton {
+  margin: 10px;
+  background-color: #ADD981;
+  border-radius: 20px;
+  font-family: Montserrat;
+  position: relative;
+  transition: box-shadow 0.4s, background-color 0.4s;
+}
+
+#best-sell .cards .card .infos .bouton:hover {
+  box-shadow: 0 0 10px #868686a6;
+  background-color: #a4e068;
+}
+
+#best-sell .cards .card .infos .bouton p {
+  color: white;
+  padding: 3px 10px;
+}
+/*# sourceMappingURL=best_sell.css.map */

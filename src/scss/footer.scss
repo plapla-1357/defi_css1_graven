@@ -1,0 +1,15 @@
+$vert-clair : #bddd9d;
+$vert-foncé : #43852a;
+
+footer{
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: $vert-clair;
+  padding-bottom: 20px;
+  a{
+    &:hover{
+      color : $vert-foncé;
+    }
+  }
+}

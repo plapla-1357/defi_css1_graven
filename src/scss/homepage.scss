@@ -1,0 +1,66 @@
+$blanc : #fff;
+$blanc-transparent : #FFFFFFDF;
+$vert-clair : #ADD981;
+
+#homepage{
+  display : flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100vh;
+  .bg{
+    position : absolute;
+    height:100%;
+    width : 100%;    
+  }
+  
+  
+  #menu{ 
+    position: relative;
+    // background: #000;
+    height : 70px;
+    width: calc(100% - 10px);
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    box-shadow: 10px 0 10px rgba(134, 111, 111, 0.164);
+    .logo{
+      height : 70px;
+      padding-left: 10px;
+    }
+    nav{
+      display : flex;
+      .lien {
+        padding : 25px;
+      }
+    }
+  }
+  #titre{
+    padding-left: 80px;
+    width : 50% ;
+    .title{
+      position: relative;
+      
+      color : $blanc ;
+    }
+  }
+  #scroll{
+    
+    padding-left: 50px;
+    padding-bottom: 20px;
+    p{
+      position :relative;
+      color : $blanc ;
+      font-weight: 300;
+      #v{
+        padding-left: 10px;
+        strong{
+          font-weight: 700;
+        }
+      }
+    }
+    
+    
+  }
+}

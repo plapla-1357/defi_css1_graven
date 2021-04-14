@@ -1,0 +1,78 @@
+$vert-clair : #ADD981;
+$blanc-transparent : #ffffffdf;
+
+#best-sell{
+  .cards{
+    margin-top: 30px;
+    width :100%;
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card{
+      border-radius: 20px;
+      background-size: contain;
+      height : 350px;
+      width : 234px;
+      margin-right: 20px;
+      display : flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transition: box-shadow 0.4s;
+
+      &:hover{
+        box-shadow: 0 0 10px #868686a6;
+      }
+      
+      &:nth-child(1){
+        background-image: url("../images/nos_meilleures_ventes/1.jpg");
+      }
+      &:nth-child(2){
+        background-image: url("../images/nos_meilleures_ventes/2.jpg");
+      }
+      &:nth-child(3){
+        background-image: url("../images/nos_meilleures_ventes/3.jpg");
+      }
+      &:nth-child(4){
+        background-image: url("../images/nos_meilleures_ventes/4.jpg");
+      }
+      .infos{
+        border-bottom-right-radius:20px ;
+        border-bottom-left-radius:20px ;
+        height: 45px;
+        width : 100%;
+        background-color: $blanc-transparent;
+        display : flex;
+        justify-content: space-between;
+        position: relative;
+        .name-prix{
+          padding-left: 10px;
+          position: relative;
+          p{
+            &.prix{
+              font-size: 14px;
+              color : $vert-clair;
+            }
+          }
+        }
+        .bouton{
+          margin:10px;
+          background-color: $vert-clair;
+          border-radius: 20px;
+          font-family: Montserrat;
+          position : relative;
+          transition : box-shadow 0.4s,
+                       background-color 0.4s;
+          &:hover{
+            box-shadow: 0 0 10px #868686a6;
+            background-color: #a4e068;
+          }
+          p{
+            color : white;
+            padding: 3px 10px;
+  
+          }
+        }
+      }
+    }
+  }
+}

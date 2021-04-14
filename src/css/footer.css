@@ -1,0 +1,12 @@
+footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #bddd9d;
+  padding-bottom: 20px;
+}
+
+footer a:hover {
+  color: #43852a;
+}
+/*# sourceMappingURL=footer.css.map */

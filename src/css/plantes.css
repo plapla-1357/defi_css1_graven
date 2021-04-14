@@ -1,0 +1,123 @@
+#plantes {
+  margin-top: 40px;
+  padding-top: 10px;
+}
+
+#plantes #articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#plantes #part1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#plantes #part1 #part1-1 .card {
+  background-image: url("../images/nos_plantes/1.jpg");
+  width: 400px;
+  height: 420px;
+  margin-right: 20px;
+}
+
+#plantes #part1 #part1-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#plantes #part1 #part1-2 .card:nth-child(1) {
+  background-image: url("../images/nos_plantes/2.jpg");
+  width: 400px;
+  height: 200px;
+}
+
+#plantes #part1 #part1-2 .card:nth-child(2) {
+  background-image: url("../images/nos_plantes/3.jpg");
+  margin-top: 20px;
+  width: 400px;
+  height: 200px;
+}
+
+#plantes #part2 {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#plantes #part2 .card:nth-child(1) {
+  background-image: url("../images/nos_plantes/4.jpg");
+  width: 230px;
+  height: 400px;
+  margin-right: 20px;
+}
+
+#plantes #part2 .card:nth-child(2) {
+  background-image: url("../images/nos_plantes/5.jpg");
+  width: 320px;
+  height: 400px;
+}
+
+#plantes #part2 .card:nth-child(3) {
+  background-image: url("../images/nos_plantes/6.jpg");
+  margin-left: 20px;
+  width: 230px;
+  height: 400px;
+}
+
+#plantes .card {
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  transition: box-shadow 0.4s;
+}
+
+#plantes .card:hover {
+  box-shadow: 0 0 10px #868686a6;
+}
+
+#plantes .card .infos {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 45px;
+  width: 100%;
+  background-color: #ffffffdf;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#plantes .card .infos .name-prix {
+  padding-left: 10px;
+  position: relative;
+}
+
+#plantes .card .infos .name-prix p.prix {
+  font-size: 14px;
+  color: #ADD981;
+}
+
+#plantes .card .infos .bouton {
+  margin: 10px;
+  background-color: #ADD981;
+  border-radius: 20px;
+  font-family: Montserrat;
+  position: relative;
+  box-shadow: 2px 4px rgba(185, 185, 185, 0.63);
+  align-items: center;
+  transition: box-shadow 0.4s, background-color 0.4s;
+}
+
+#plantes .card .infos .bouton:hover {
+  box-shadow: 0 0 10px #868686a6;
+  background-color: #a4e068;
+}
+
+#plantes .card .infos .bouton p {
+  color: white;
+  padding: 3px 10px;
+}
+/*# sourceMappingURL=plantes.css.map */

@@ -1,0 +1,67 @@
+#homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+#homepage .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#homepage #menu {
+  position: relative;
+  height: 70px;
+  width: calc(100% - 10px);
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  box-shadow: 10px 0 10px rgba(134, 111, 111, 0.164);
+}
+
+#homepage #menu .logo {
+  height: 70px;
+  padding-left: 10px;
+}
+
+#homepage #menu nav {
+  display: flex;
+}
+
+#homepage #menu nav .lien {
+  padding: 25px;
+}
+
+#homepage #titre {
+  padding-left: 80px;
+  width: 50%;
+}
+
+#homepage #titre .title {
+  position: relative;
+  color: #fff;
+}
+
+#homepage #scroll {
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+#homepage #scroll p {
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+}
+
+#homepage #scroll p #v {
+  padding-left: 10px;
+}
+
+#homepage #scroll p #v strong {
+  font-weight: 700;
+}
+/*# sourceMappingURL=homepage.css.map */
