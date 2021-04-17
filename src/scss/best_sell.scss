@@ -5,10 +5,12 @@ $blanc-transparent : #ffffffdf;
   .cards{
     margin-top: 30px;
     width :100%;
+    
     display : flex;
     justify-content: center;
     flex-wrap: wrap;
     .card{
+      margin-bottom: 20px;
       border-radius: 20px;
       background-size: contain;
       height : 350px;

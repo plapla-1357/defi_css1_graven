@@ -31,13 +31,67 @@ $vert-clair : #ADD981;
     }
     nav{
       display : flex;
+      &.active{
+        .lien{
+          height : 50px;
+          position : relative;
+          padding : 20px;
+          
+        }
+      }
       .lien {
-        padding : 25px;
+        
+        height : 50px;
+        display: flex;
+
+        flex-direction: column;
+        overflow: hidden;
+        // background-color: beige; 
+        justify-content: center;
+        a{
+          padding : 20px;
+
+        }
+      }
+      .burger{
+        margin: 15px;
+        height : 38px;
+        width : 40px;
+        // background-color: aqua;
+        // position: relative;
+        span{
+          height : 5px;
+          width : 40px;
+          // position : absolute;
+          background-color: $vert-clair;
+          border-radius: 20px;
+          margin-top: 50%;
+          transform: translateY(-50%);
+          display: none;
+          &::before{
+            content : "";
+            margin-top: -12px;
+            height : 6px;
+            width : 40px;
+            position : absolute;
+            background-color: $vert-clair;
+            border-radius: 20px;
+          }
+          &::after{
+            content : "";
+            margin-top: 12px;
+            height : 6px;
+            width : 40px;
+            position : absolute;
+            background-color: $vert-clair;
+            border-radius: 20px;
+          }
+        }
       }
     }
   }
   #titre{
-    padding-left: 80px;
+    padding-left: 10%;
     width : 50% ;
     .title{
       position: relative;
@@ -47,9 +101,10 @@ $vert-clair : #ADD981;
   }
   #scroll{
     
-    padding-left: 50px;
-    padding-bottom: 20px;
+    padding-left: 70px;
+ 
     p{
+      padding-bottom: 50px;
       position :relative;
       color : $blanc ;
       font-weight: 300;
@@ -60,7 +115,37 @@ $vert-clair : #ADD981;
         }
       }
     }
-    
+  }
+}
+
+@media (max-width : 850px){
+  #homepage{
+    #titre{
+      width : 80%;
+    }
+    #menu{
+      justify-content:space-between;
+      nav{
+        flex-direction: column;
+        align-items: flex-end;
+        .burger{
+          span{
+            display: block;
+          }
+        }
+        .lien{
+          z-index: 2;
+          background-color: $vert-clair;
+          border-radius: 0;
+          width : 150px;
+          text-align: center;
+
+          height: 0;
+          padding : 0;
+          
+        }
+      }
+    }
     
   }
 }

@@ -22,9 +22,11 @@ a{
   border-radius: 20px;
   text-decoration: none;  
   transition: color 0.6s;
+  vertical-align: middle;
   &:hover{
     color: $vert-clair;
-    border : 1px solid #ADD98133
+    //border : 1px solid #ADD98133
+    border : 1px solid #243612da
     
   }
 }
@@ -60,4 +62,10 @@ p{
 strong{
   color : white;
   font-weight: 700;
+}
+
+@media (max-width : 850px){
+  h1{
+    font-size: 40px;
+  }
 }
