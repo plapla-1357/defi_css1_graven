@@ -1,0 +1,108 @@
+$blanc : #fff;
+$blanc-transparent : #FFFFFFDF;
+$vert-clair : #ADD981;
+
+* {
+    padding : 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+h1{
+    font-family: "Abril Fatface";
+    font-size: 70px;
+    font-weight: 100;
+    margin-left: 10vw ;
+}
+
+header {
+    height : 70px;
+    display : flex;
+    flex-direction: row;
+    img{
+        background-color: $vert-clair;
+        height : 70px;
+        max-width: 20vw;
+        padding : 5px;
+        border-bottom-right-radius: 20px;
+    }
+
+}
+
+#article{
+    display : flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+    .content{
+        display : flex;
+        img{
+            max-width : 40vw;
+            max-height: 70vh;
+            border-radius: 20px;
+            margin-left: 10vw;
+        }
+        .description{
+            padding : 20px;
+            width : 40vw;
+            max-height: 70vh;
+            margin-left: 10vw;
+            background-color: #eef7e993;
+            border-radius: 20px;
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                margin-top: 20px;
+            }
+            p {
+                margin: 10px;
+                margin-left: 50px;
+                
+                strong{
+                    color : $vert-clair ;
+                    font-size: 50px;
+                }
+            }
+
+            .content{
+                display : flex;
+                flex-direction: column;
+            }
+
+            .service{
+                display : flex;
+                justify-content: space-around;
+                .card{
+                    i{
+                        font-size: 30px;
+                        margin: 10px;
+                    }
+                    p{
+                        margin : 0;
+                    }
+                    text-align: center;
+                    width: 20vw;
+                }
+            }
+            .button{
+                background-color: $vert-clair;
+                
+                color : white;
+                font-size: 20px;
+                padding : 10px;
+                border-radius: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-right: 20px;
+                padding-left: 20px;
+                transition : background 0.4s,
+                            box-shadow 0.4s;
+                &:hover{
+                    background-color: #a4e068;
+                    box-shadow: 5px 0 10px #8e928a;
+                }
+            }
+        }
+    }
+}
